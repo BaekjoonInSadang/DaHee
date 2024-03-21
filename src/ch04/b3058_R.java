@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
  * 4. 열 기준으로 행 변경 후 Max 값 찾은 뒤 돌려놓기, 행에서 가장 큰 출력값
  * 5. 최대 값 출력
  */
-public class b3058 {
+public class b3058_R {
     static char board[][];
     static int N;
     static int Max;
@@ -72,6 +72,7 @@ public class b3058 {
             }
         }
 
+        //for문 진행하는 순서 -> 동일한 행에 열 변경, 가로 방향 탐색
 //        for(int i = 0; i<N-1 ;i++){
 //            int count = 1;
 //
