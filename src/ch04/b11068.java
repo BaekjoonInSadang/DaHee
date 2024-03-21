@@ -10,16 +10,38 @@ import java.io.InputStreamReader;
 public class b11068 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int T = Integer.parseInt(br.readLine());
-        for(int i = 0; i< T ;i++){
+
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = 0; i < T; i++) {
             int n = Integer.parseInt(br.readLine());
+            boolean found = false;
+            for(int B = 2; B < 65; B++) {
+                String str = converse(n, B);
+                String str2 = new StringBuffer(str).reverse().toString();
+                if(str.equals(str2)) {
+                    sb.append(1).append('\n');
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                sb.append(0).append('\n');
+            }
         }
-
-        //리스트에 담아 Array/2 반절 돌고 여부 파악
-
+        System.out.println(sb);
     }
 
     //진법 변환
-//    public static int converse(int B) {
-//    }
+    public static String converse(int n, int B) {
+        StringBuffer sb = new StringBuffer();
+
+        while(n > 0){
+            sb.append((char)(n % B));
+            n /= B;
+        }
+        return sb.reverse().toString();
+    }
 }
