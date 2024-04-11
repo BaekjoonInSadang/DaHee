@@ -3,9 +3,7 @@ package ch05;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 1. 가장 많이 팔린 책
@@ -24,6 +22,25 @@ public class b1302 {
         }
 
         HashMap<String, Integer> map = new HashMap<>();
+
+//        for (int i = 0; i < N; i++) {
+//            String book = br.readLine();
+//            map.put(book, map.getOrDefault(book, 0) + 1);
+//        }
+//
+//        int max = Collections.max(map.values());
+//
+//        List<String> list = new ArrayList<>();
+//
+//        //alt + enter
+//        map.forEach((key, value) -> {
+//            if (value == max) {
+//                list.add(key);
+//            }
+//        });
+//
+//        Collections.sort(list);
+//        System.out.print(list.get(0));
 
         for(int i = 0 ;i < N ; i++){
             if(map.containsKey(arr[i])){

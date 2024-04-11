@@ -29,18 +29,19 @@ public class b18870_Q {
 
         HashMap<Integer, Integer> map = new HashMap<>();
 
-//        for (int i = 0; i < N - 1; i++) {
-//            map.put(arr[i], count);
-//            if (arr[i] != arr[i + 1]) {
-//                count++;
+        for (int i = 0; i < N - 1; i++) {
+            map.put(arr[i], count); // -10 -9 2 4 4  0 1 2 3
+            if (arr[i] != arr[i + 1]) {
+                count++;
+            }
+            System.out.println(arr[i] + ":" + count);
+        }
+
+//        for (int i = 0; i < N; i++) {
+//            if (!map.containsKey(arr[i])) {
+//                map.put(arr[i], count++);
 //            }
 //        }
-
-        for (int i = 0; i < N; i++) {
-            if (!map.containsKey(arr[i])) {
-                map.put(arr[i], count++);
-            }
-        }
 
         StringBuilder sb = new StringBuilder();
 
