@@ -50,6 +50,7 @@ public class b2910 {
         }
         //모르겠음
 
+
         System.out.println(num);
     }
 }
