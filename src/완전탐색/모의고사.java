@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class 모의고사 {
-//    public List<Integer> solution(int[] answers){
+    public List<Integer> solution(int[] answers){
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 
         int[] num1 = {1, 2, 3, 4, 5};
         int[] num2 = {2, 1, 2, 3, 2, 4, 2, 5};
