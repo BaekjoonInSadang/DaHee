@@ -12,7 +12,7 @@ public class 모의고사 {
         int[] num2 = {2, 1, 2, 3, 2, 4, 2, 5};
         int[] num3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
 
-        int[] answers = {1, 2, 3, 4, 5};
+//        int[] answers = {1, 2, 3, 4, 5};
 
         int[] cnt = {0, 0, 0};
 
@@ -32,7 +32,7 @@ public class 모의고사 {
             }
         }
 
-//        return list;
+        return list;
 
 //        StringBuilder sb = new StringBuilder();
 //        int[] result = new int[list.size()];
